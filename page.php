@@ -23,8 +23,8 @@
           <main>
             <?php if(!is_front_page()) { ?><?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );}?><?php }?>
 
-            <?php get_template_part( 'loop', 'home' ); ?>
-
+            <?php get_template_part( 'loop', 'page' ); ?>
+            
           </main>
 
           <?php if (is_front_page()) {include 'includes/sidebar.php';}  ?>
