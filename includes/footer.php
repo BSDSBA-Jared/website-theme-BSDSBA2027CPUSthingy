@@ -19,8 +19,8 @@
 
               <div class="footer_logo_holder">
                 <div class="footer_logo">
-                  <a href="<?php //echo get_home_url(); ?>">
-                    <figure><img src="<?php bloginfo('template_url');?>/images/footer-logo.png" alt="<?php //echo get_bloginfo('name');?>"></figure>
+                  <a href="<?php echo get_home_url(); ?>">
+                    <figure><img src="<?php bloginfo('template_url');?>/images/footer-logo.png" alt="<?php echo get_bloginfo('name');?>"></figure>
                   </a>
                 </div>
 
@@ -34,16 +34,8 @@
         <div class="wrapper">
           <div class="footer_btm_con">
             <div class="footer_nav">
-              <!--?php wp_nav_menu( array('theme_location' => 'secondary' ) ); ?-->
-              <ul>
-                <li class="current_page_item"><a href="index.php">Home</a></li>
-                <li><a href="javscript:;">About Us</a></li>
-                <li><a href="javscript:;">Services</a></li>
-                <li><a href="javscript:;">Our Team</a></li>
-                <li><a href="javscript:;">Careers</a></li>
-                <li><a href="javscript:;">Blog</a></li>
-                <li><a href="javscript:;">Contact Us</a></li>
-              </ul>
+              <?php wp_nav_menu( array('theme_location' => 'secondary' ) ); ?>
+              
             </div>
 
             <div class="copyright">
